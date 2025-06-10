@@ -1,0 +1,4 @@
+{
+ "mfe_angular": "http://localhost:4201",
+ "mfe_react": "http://localhost:4202/remoteEntry.js"
+}
