@@ -1,0 +1,18 @@
+
+<ng-content *ngIf="cardDatails.length; else loading">
+    <section class="display">
+        <wc-card *ngFor="let x of cardDatails" [details]="x" (card-details-get)="onGetDetails($event)"></wc-card>
+    </section>
+    <ng-content *ngIf="currentCardDetails">
+        <section class="current">
+            <span><strong>Title:</strong> {{ currentCardDetails.title }}</span>
+            <span><strong>Description:</strong> {{ currentCardDetails.description }}</span>
+            <span><strong>ImageUrl:</strong> {{ currentCardDetails.imageUrl }}</span>
+        </section>
+    </ng-content>
+</ng-content>
+<ng-template #loading><p>Cards are currently loading</p></ng-template>
+
+<footer>
+    Powered by Angular
+</footer>

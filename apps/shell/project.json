@@ -21,6 +21,11 @@
           {
             "glob": "**/*",
             "input": "apps/shell/public"
+          },
+          {
+            "glob": "**/*",
+            "input": "libs/assets/",
+            "output": "./"
           }
         ],
         "styles": ["apps/shell/src/styles.scss"],

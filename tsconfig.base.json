@@ -7,6 +7,7 @@
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "useDefineForClassFields": false,
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
@@ -15,6 +16,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@module-federation-example/web-components": [
+        "libs/web-components/src/index.ts"
+      ],
       "mfe_angular/Routes": [
         "apps/mfe_angular/src/app/remote-entry/entry.routes.ts"
       ],

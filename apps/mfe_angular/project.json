@@ -20,6 +20,11 @@
           {
             "glob": "**/*",
             "input": "apps/mfe_angular/public"
+          },
+          {
+            "glob": "**/*",
+            "input": "libs/assets/",
+            "output": "./"
           }
         ],
         "styles": ["apps/mfe_angular/src/styles.scss"],

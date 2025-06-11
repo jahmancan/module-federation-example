@@ -18,7 +18,12 @@
         "tsConfig": "apps/mfe_react/tsconfig.app.json",
         "assets": [
           "apps/mfe_react/src/favicon.ico",
-          "apps/mfe_react/src/assets"
+          "apps/mfe_react/src/assets",
+           {
+            "glob": "**/*",
+            "input": "libs/assets/",
+            "output": "./"
+          }
         ],
         "styles": ["apps/mfe_react/src/styles.scss"],
         "scripts": [],
