@@ -1,8 +1,8 @@
 import * as ReactDOM from 'react-dom/client';
 import { createRoot } from 'react-dom/client';
+import { StrictMode } from 'react';
 
 import App from './app/app';
-import { StrictMode } from 'react';
 
 // the entry is created as a webcomponent
 class MfeReactElement extends HTMLElement {
@@ -25,4 +25,5 @@ class MfeReactElement extends HTMLElement {
 }
 
 // register the webcomponent
-customElements.define('mfe-react', MfeReactElement);
+customElements.get('mfe-react') ||
+  customElements.define('mfe-react', MfeReactElement);

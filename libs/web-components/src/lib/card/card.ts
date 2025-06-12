@@ -4,7 +4,7 @@ import { CardDetails } from './card-details';
 
 export class Card extends LitElement {
   private _details!: CardDetails;
-  @property({ type: Object })
+  @property()
   set details(value: CardDetails) {
     const oldValue = this._details;
     this._details = value;
